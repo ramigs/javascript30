@@ -63,9 +63,8 @@ kbd {
     font-size: 3rem;
 }
 
-.photo-credit {
-    position: absolute;
-    right: 0px;
-    margin-right: 2rem;
-    margin-top: 2rem;
+.sound {
+    font-size: 1.2rem;
+    letter-spacing: .1rem;
+    color: #ffc600;
 }

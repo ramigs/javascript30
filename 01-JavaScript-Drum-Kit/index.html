@@ -758,15 +758,15 @@
         }
 
         function removeAnimation(e) {
-            if (e.propertyName !== 'transform') return;
+            //if (e.propertyName !== 'transform') return;
             this.classList.remove('animation');
         }
 
         const keys = document.querySelectorAll('.key');
         keys.forEach(key => key.addEventListener('transitionend', removeTransition));
 
-        /* const drums = document.querySelectorAll('g');
-        drums.forEach(drum => drum.addEventListener('animationend', removeAnimation)); */
+        const drums = document.querySelectorAll('g');
+        drums.forEach(drum => drum.addEventListener('webkitAnimationEnd', removeAnimation));
 
         window.addEventListener('keydown', playSound);
     </script>
