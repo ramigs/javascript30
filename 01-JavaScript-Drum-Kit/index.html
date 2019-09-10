@@ -16,7 +16,7 @@
                     d="M999.77,656.9c0,36.16-223.73,65.48-499.77,65.48S0.23,693.06.23,656.9,224,591.42,500,591.42,999.77,620.65,999.77,656.9Z"
                     transform="translate(-0.23)" fill="#b0bcc5"></path>
                 <g id="Snare">
-                    <g id="Snare-Drum" data-key="83">
+                    <g id="Snare-Drum" data-key="71">
                         <path d="M655.47,320.79H843.88v92.94H655.47V320.79Z" transform="translate(-0.23)" fill="#eb495d"
                             stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"></path>
                         <path d="M840.5,345.29H658.84" transform="translate(-0.23)" fill="none" stroke="#e61c35"
@@ -137,7 +137,7 @@
                     </g>
                 </g>
                 <g id="Floor-Tom">
-                    <g id="Floor-Tom-Drum" data-key="71">
+                    <g id="Floor-Tom-Drum" data-key="83">
                         <path d="M160.34,314.87H402.83V585.25H160.34V314.87Z" transform="translate(-0.23)"
                             fill="#eb495d" stroke="#333" stroke-linecap="round" stroke-linejoin="round"
                             stroke-width="8"></path>
@@ -322,7 +322,7 @@
                         </g>
                         <g id="Tom-Left-All" data-svg-origin="489.0400085449219 224.47000885009766"
                             style="transform-origin: 0px 0px 0px; transform: matrix(1, 0, 0, 1, 0, 0);">
-                            <g id="Tom-Left-Drum" data-key="75" data-svg-origin="351.90499114990234 224.47000885009766"
+                            <g id="Tom-Left-Drum" data-key="68" data-svg-origin="351.90499114990234 224.47000885009766"
                                 style="transform-origin: 0px 0px 0px; transform: matrix(1, 0, 0, 1, 0, 0);">
                                 <path d="M259.2,146.74H445.93V302.2H259.2V146.74Z" transform="translate(-0.23)"
                                     fill="#eb495d" stroke="#333" stroke-linecap="round" stroke-linejoin="round"
@@ -403,7 +403,7 @@
                                 transform="translate(-0.23)" fill="#333"></path>
                         </g>
                         <g id="Tom-Right-All">
-                            <g id="Tom-Right-Drum" data-key="74">
+                            <g id="Tom-Right-Drum" data-key="70">
                                 <path d="M555.76,146.74H742.49V302.2H555.76V146.74Z" transform="translate(-0.23)"
                                     fill="#eb495d" stroke="#333" stroke-linecap="round" stroke-linejoin="round"
                                     stroke-width="8"></path>
@@ -582,7 +582,7 @@
                     </g>
                 </g>
                 <g id="Crash">
-                    <g id="Crash-Stand-Top" data-key="70">
+                    <g id="Crash-Stand-Top" data-key="74">
                         <path d="M173.78,121.64l17.15-47.15a4.64,4.64,0,1,0-8.7-3.21l-17.15,47.15Z"
                             transform="translate(-0.23)" fill="#eefaf9" stroke="#333" stroke-linecap="round"
                             stroke-linejoin="round" stroke-width="6"></path>
@@ -739,17 +739,37 @@
     <audio data-key="74" src="sounds/crash.wav"></audio>
 
     <script>
-        window.addEventListener('keydown', function(e) {
+        function playSound(e) {
             const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
             const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
-            console.log(key);
+            const drum = document.querySelector(`g[data-key="${e.keyCode}"]`);
+
             if (!audio) return;
+
             audio.currentTime = 0;
             audio.play();
             key.classList.add('playing');
-        });
-    </script>
+            drum.classList.add('animation');
+        }
 
+        function removeTransition(e) {
+            if (e.propertyName !== 'transform') return;
+            this.classList.remove('playing');
+        }
+
+        function removeAnimation(e) {
+            if (e.propertyName !== 'transform') return;
+            this.classList.remove('animation');
+        }
+
+        const keys = document.querySelectorAll('.key');
+        keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+
+        /* const drums = document.querySelectorAll('g');
+        drums.forEach(drum => drum.addEventListener('animationend', removeAnimation)); */
+
+        window.addEventListener('keydown', playSound);
+    </script>
 
 </body>
 
