@@ -67,10 +67,37 @@
             top: 50%;
             transform-origin: 100%;
             transform: rotate(90deg);
+            transition: all 0.05s ease;
+            transition-timing-function: cubic-bezier(0, 2.6, 0.4, 1);
+
         }
     </style>
 
     <script>
+        const secondHand = document.querySelector('.second-hand');
+        const minHand = document.querySelector('.min-hand');
+        const hourHand = document.querySelector('.hour-hand');
+
+        function setDate() {
+            const now = new Date();
+            
+            // Get current seconds, minutes, & hours and calculate the degree shift
+            const seconds = now.getSeconds();
+            const minutes = now.getMinutes();
+            const hours = now.getHours();
+            
+            const secondsDegrees = ((seconds / 60) * 360) + 90;
+            const minutesDegrees = ((minutes / 60) * 360) + 90;
+            const hoursDegrees = ((hours / 12) * 360) + 90;
+            
+            // Apply rotation to the clock hands corresponding with current time value
+            secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
+            minHand.style.transform = `rotate(${minutesDegrees}deg)`;
+            hourHand.style.transform = `rotate(${hoursDegrees}deg)`;
+        }
+        
+        // Call function once every second
+        setInterval(setDate, 1000);
     </script>
 </body>
 

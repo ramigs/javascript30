@@ -6,4 +6,4 @@ Join the challenge [here](https://javascript30.com/).
 ## Table Of Contents
 
 1.  [JavaScript Drum Kit](/01-JavaScript-Drum-Kit)
-2.  [JS + CSS Clock](02-JS-and-CSS-Clock)
+2.  [JS and CSS Clock](02-JS-and-CSS-Clock)
