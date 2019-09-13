@@ -6,3 +6,6 @@
 - ```transform-origin: 100%``` CSS to change the pivot point along the x-axis
 - ```transition-timing-function: cubic-bezier();``` CSS to get cool unusual transition timings
 - JavaScript function ```setInterval``` to run something every x milliseconds
+
+
+
