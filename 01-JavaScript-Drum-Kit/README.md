@@ -8,5 +8,3 @@
 - ```audio.currentTime = 0``` to rewind to the start
 - ```transitionend``` DOM event
 
-
-
