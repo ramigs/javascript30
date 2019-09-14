@@ -1,6 +1,6 @@
 # Notes
 
-- Unlike SASS, the values of CSS variables can be changed dynamically (with
+- Unlike SASS, the value of CSS variables can be altered dynamically (with
   JavaScript). HTML elements that use these variables will be updated
   accordingly. Variables also follow regular cascading rules.
 - Declaring CSS variables at root level:
