@@ -22,4 +22,3 @@
 ```javascript
 document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
 ```
-
