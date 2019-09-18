@@ -10,5 +10,3 @@
 ```
 - `transform: translateY()` from `0%` to `100%` - and vice-versa - takes care of the animation
 - Toggling a class on and off `this.classList.toggle('open');`
-
-
