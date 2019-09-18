@@ -1,7 +1,7 @@
 # Notes
 
 - HTML element can be at the same time a flex container and a flex item
-- `flex: 1 0 auto;` to make flex items evenly share the space of the container
+- `flex: 1 0 auto;` to make flex items evenly share the space of its the container
 - Hiding first item:
 ```css
 .panel > *:first-child {
