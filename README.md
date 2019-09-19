@@ -12,8 +12,8 @@ Join the challenge [here](https://javascript30.com/).
 
 | Code | Demo | Status |
 |:-|:-|:-|
-| [JavaScript Drum Kit](/01-JavaScript-Drum-Kit)| [Demo](https://ramigs-js30-01.netlify.com/) | [![Netlify Status](https://api.netlify.com/api/v1/badges/6a939a7b-4b09-4b2b-a79c-63fdffd287f3/deploy-status)](https://app.netlify.com/sites/ramigs-js30-01/deploys) |
-| [JS and CSS Clock](02-JS-and-CSS-Clock) | [Demo](https://ramigs-js30-02.netlify.com/) | [![Netlify Status](https://api.netlify.com/api/v1/badges/42b88a1b-6df3-438f-bdfe-f9dc74e02766/deploy-status)](https://app.netlify.com/sites/ramigs-js30-02/deploys) |
-| [Playing with CSS Variables and JS](03-CSS-Variables) | [Demo](https://ramigs-js30-03.netlify.com/) | [![Netlify Status](https://api.netlify.com/api/v1/badges/edf0f68d-5cb0-4dc4-bc23-8d2fde636851/deploy-status)](https://app.netlify.com/sites/ramigs-js30-03/deploys) |
-| [Array Cardio Day 1](04-Array-Cardio-Day-1) | [Demo](https://ramigs-js30-04.netlify.com/) | [![Netlify Status](https://api.netlify.com/api/v1/badges/0eb70ab9-c16a-4e45-8f4e-68056a5321ae/deploy-status)](https://app.netlify.com/sites/ramigs-js30-04/deploys)
-| [Flex Panels Image Gallery](05-Flex-Panel-Gallery) | [Demo](https://ramigs-js30-05.netlify.com/) | [![Netlify Status](https://api.netlify.com/api/v1/badges/d2198187-680c-4569-a88b-4733cc8c928c/deploy-status)](https://app.netlify.com/sites/ramigs-js3-05/deploys)
+| 01 - [JavaScript Drum Kit](/01-JavaScript-Drum-Kit)| [Demo](https://ramigs-js30-01.netlify.com/) | [![Netlify Status](https://api.netlify.com/api/v1/badges/6a939a7b-4b09-4b2b-a79c-63fdffd287f3/deploy-status)](https://app.netlify.com/sites/ramigs-js30-01/deploys) |
+| 02 - [JS and CSS Clock](02-JS-and-CSS-Clock) | [Demo](https://ramigs-js30-02.netlify.com/) | [![Netlify Status](https://api.netlify.com/api/v1/badges/42b88a1b-6df3-438f-bdfe-f9dc74e02766/deploy-status)](https://app.netlify.com/sites/ramigs-js30-02/deploys) |
+| 03 - [Playing with CSS Variables and JS](03-CSS-Variables) | [Demo](https://ramigs-js30-03.netlify.com/) | [![Netlify Status](https://api.netlify.com/api/v1/badges/edf0f68d-5cb0-4dc4-bc23-8d2fde636851/deploy-status)](https://app.netlify.com/sites/ramigs-js30-03/deploys) |
+| 04 - [Array Cardio Day 1](04-Array-Cardio-Day-1) | [Demo](https://ramigs-js30-04.netlify.com/) | [![Netlify Status](https://api.netlify.com/api/v1/badges/0eb70ab9-c16a-4e45-8f4e-68056a5321ae/deploy-status)](https://app.netlify.com/sites/ramigs-js30-04/deploys)
+| 05 - [Flex Panels Image Gallery](05-Flex-Panel-Gallery) | [Demo](https://ramigs-js30-05.netlify.com/) | [![Netlify Status](https://api.netlify.com/api/v1/badges/d2198187-680c-4569-a88b-4733cc8c928c/deploy-status)](https://app.netlify.com/sites/ramigs-js3-05/deploys)
