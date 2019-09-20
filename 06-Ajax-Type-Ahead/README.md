@@ -6,4 +6,4 @@
   `catch()`
 - `keyup` DOM event to trigger a function every time an input changes
 - using `this` to access the value property of the input object that calls
-  `displayMatches` triggered by the events
+  `displayMatches`
