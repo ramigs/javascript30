@@ -88,46 +88,46 @@
 
   <script>
 
-    const checkBoxes = document.querySelectorAll('[type="checkbox"]');
+    const checkboxes = document.querySelectorAll('.inbox input[type="checkbox"]');
     
     function processClick(e) {
       
-      let index = Array.prototype.indexOf.call(checkBoxes, e.target);
-      if (e.shiftKey) {
+      let index = Array.prototype.indexOf.call(checkboxes, e.target);
+      if (e.shiftKey && e.checked) {
         
+        // Checking before, if required
         let priorChecked = -1;
-        
         for (let i = index - 1; (i >= 0 && priorChecked === -1); i--) {
-          if (checkBoxes[i].checked) {
+          if (checkboxes[i].checked) {
             priorChecked = i;
           }
         }
 
         if (priorChecked !== -1) {
           for (let j = priorChecked + 1; j < index; j++) {
-            checkBoxes[j].checked = true;
+            checkboxes[j].checked = true;
           }
         }
 
+        // Checking after, if required
         let nextChecked = -1;
-        
-        for (let i = index + 1; (i >= 0 && nextChecked === -1); i++) {
-          if (checkBoxes[i].checked) {
+        for (let i = index + 1; (i < checkboxes.length && nextChecked === -1); i++) {
+          if (checkboxes[i].checked) {
             nextChecked = i;
           }
         }
 
         if (nextChecked !== -1) {
           for (let j = index + 1; j < nextChecked; j++) {
-            checkBoxes[j].checked = true;
+            checkboxes[j].checked = true;
           }
         }
       }
 
     }
 
-    for (let i = 0; i < checkBoxes.length; i++) {
-      checkBoxes[i].addEventListener('click', processClick);
+    for (let i = 0; i < checkboxes.length; i++) {
+      checkboxes[i].addEventListener('click', processClick);
     }
 
   </script>
