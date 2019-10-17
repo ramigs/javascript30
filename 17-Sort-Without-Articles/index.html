@@ -43,7 +43,6 @@
   <ul id="bands"></ul>
 
 <script>
-    const bandsHTML = document.getElementById('bands');
     const bands = ['The Plot in You', 'The Devil Wears Prada', 'Pierce the Veil', 'Norma Jean', 'The Bled', 'Say Anything', 'The Midway State', 'We Came as Romans', 'Counterparts', 'Oh, Sleeper', 'A Skylit Drive', 'Anywhere But Here', 'An Old Dog'];
     const articles = ['A', 'An', 'The'];
 
@@ -54,7 +53,7 @@
         return articles.includes(firstWord) ? words.slice(1).join(' ') : s;
     }
 
-    function buildHTMLBandList(bands) {
+    function buildBandList(bands) {
         return bands
                 .map(b => `<li>${b}</li>`)
                 .join('');
@@ -63,7 +62,7 @@
     bands.sort((a, b) => clearArticle(a).localeCompare(clearArticle(b)));
 
     document.getElementById('bands').innerHTML = 
-        buildHTMLBandList(bands);
+        buildBandList(bands);
 
 </script>
 
