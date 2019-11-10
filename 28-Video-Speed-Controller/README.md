@@ -1,0 +1,3 @@
+- HTML5 `video` + event `mousemove`
+- `bar.style.height = height;` assigns `height` as a percentage of its parent `div` 
+- `video.playbackRate`
